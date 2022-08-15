@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML Forms</title>
+		<script defer src="./test.js"></script>
+	</head>
+	<body>
+		<div class="form">
+			<div class="form-group">
+				<label for="name">Name: &nbsp;</label>
+				<input type="text" id="name" data-name />
+			</div>
+			<br />
+			<div class="form-group">
+				<label for="age">Age: &nbsp;</label>
+				<input type="number" id="age" data-age />
+			</div>
+			<br />
+			<div class="form-group">
+				<label for="gender">Gender: </label>
+				<input type="radio" name="gender" id="male" data-male />
+				<label for="male">Male</label>
+				<input type="radio" name="gender" id="female" data-female />
+				<label for="female">Female</label>
+			</div>
+			<br />
+			<div class="form-group">
+				<label for="berth: ">Other Preferences: &nbsp;</label>
+				<select data-berth id="berth">
+					<option value="" disabled selected>-- select any option --</option>
+					<option>Lower</option>
+					<option>Upper</option>
+					<option>Middle</option>
+					<option>Side Lower</option>
+					<option>Side Upper</option>
+				</select>
+			</div>
+			<br />
+			<button id="btn" data-btn>Book Tickets</button>
+		</div>
+	</body>
+</html>
